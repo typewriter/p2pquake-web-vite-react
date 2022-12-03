@@ -1,4 +1,4 @@
-import { React, Suspense, useState } from "react";
+import { Suspense, useState } from "react";
 import { ErrorBoundary } from "react-error-boundary";
 import reactLogo from "./assets/react.svg";
 import "./App.css";
