@@ -127,9 +127,9 @@ export function UserquakeEvaluationFromJSONTyped(
     areaConfidences: !exists(json, "area_confidences")
       ? undefined
       : mapValues(
-        json["area_confidences"],
-        UserquakeEvaluationAllOfAreaConfidencesFromJSON
-      ),
+          json["area_confidences"],
+          UserquakeEvaluationAllOfAreaConfidencesFromJSON
+        ),
   };
 }
 
@@ -154,8 +154,8 @@ export function UserquakeEvaluationToJSON(
       value.areaConfidences === undefined
         ? undefined
         : mapValues(
-          value.areaConfidences,
-          UserquakeEvaluationAllOfAreaConfidencesToJSON
-        ),
+            value.areaConfidences,
+            UserquakeEvaluationAllOfAreaConfidencesToJSON
+          ),
   };
 }
